@@ -1,0 +1,37 @@
+// Topbar
+.topbar {
+    background-color: $clr-e5e5e5;
+    padding: 10px 0;
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+            display: inline-block;
+            img {
+                height: 40px;
+
+                // 767px
+                @media (max-width: $break-767) {
+                    height: 24px;
+                }
+            }
+        }
+        span {
+            font-family: $secondary-ff;
+            text-align: right;
+            font-size: 1.5em;
+            font-weight: 300;
+            color: $primary-clr;
+
+            // 767px
+            @media (max-width: $break-767) {
+                font-size: 1.1em;
+                line-height: 1.2;
+            }
+            b {
+                font-weight: 700;
+            }
+        }
+    }
+}
